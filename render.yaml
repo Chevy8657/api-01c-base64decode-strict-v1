@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: api-01c-base64decode-strict-v1
+    runtime: node
+    plan: free
+    region: virginia
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /health
